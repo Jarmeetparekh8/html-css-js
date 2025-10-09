@@ -1,0 +1,46 @@
+div{
+  display: inline-block;
+  width: 200px;
+  font-family: Arial, Helvetica, sans-serif;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+  margin-right: 10px;
+}
+img{
+  object-fit: contain;
+  width: 200px;
+  display: inline-block;
+}
+p{
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+button{
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  background-color: rgb(29, 155, 240);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 15px;
+  vertical-align: top;
+  cursor: pointer;
+  transition: box-shadow 0.15s;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+.name{
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  font-weight: bold;
+}
+.friends{
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: gray;
+  font-size: 14px;
+}

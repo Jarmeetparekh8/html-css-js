@@ -1,0 +1,58 @@
+.profile-div{
+  display: inline-block;
+  width: 80px;
+  vertical-align: middle;
+}
+img{
+  width: 100%;
+  border-radius: 50px;
+}
+.info-div{
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: 10px;
+  width: 150px;
+}
+p{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.name{
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+.category{
+  margin-bottom: 8px;
+  color: lightgray;
+}
+.title{
+  color: lightgray;
+}
+div{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+}
+.follow-div{
+  display: inline-block;
+  vertical-align: middle;
+}
+button{
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  background-color: rgb(29, 155, 240);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 17px;
+  vertical-align: top;
+  cursor: pointer;
+  transition: box-shadow 0.15s;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  font-weight: 700 ;
+}
+.container{
+  margin-bottom: 10px;
+}
