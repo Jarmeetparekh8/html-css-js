@@ -5,4 +5,52 @@
   left: 0;
   bottom: 0;
   width: 80px;
+  z-index: 200;
+}
+.sidebar-icon{
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.sidebar-icon img{
+  height: 22px;
+  margin-bottom: 5px;
+}
+.sidebar-icon div{
+  font-family: roboto,arial;
+  font-size: 10px;
+}
+.sidebar-icon:hover{
+  background-color: rgb(231, 231, 231);
+}
+
+@media(min-width:1200px){
+  body{
+    padding-left: 200px;
+  }
+
+  .sidebar{
+    width: 170px;
+  }
+  .sidebar-icon{
+    height: 40px;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    padding-left: 20px;
+  }
+  .sidebar-icon img{
+    margin: 0;
+  }
+  .sidebar-icon div{
+    padding-left: 8px;
+    font-size: 14px;
+  }
+  .sidebar-home-icon{
+    margin-top: 2px;
+  }
+
 }
