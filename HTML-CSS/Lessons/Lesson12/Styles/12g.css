@@ -1,0 +1,41 @@
+button{
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  background-color: rgb(29, 155, 240);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: bold;
+  vertical-align: top;
+  cursor: pointer;
+  transition: box-shadow 0.15s;
+  vertical-align: middle;
+}
+p{
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.card{
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  padding-left: 10px;
+}
+.left-section{
+  width: 50px;
+}
+img{
+  width: 100%;
+  border-radius: 50px;
+}
+.middle-section{
+  flex: 1;
+  max-width: 200px;
+  padding-left: 15px;
+}
+.right-section{
+  width: 100px;
+}

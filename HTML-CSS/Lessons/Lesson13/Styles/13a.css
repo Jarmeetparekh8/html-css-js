@@ -1,0 +1,11 @@
+.container{
+  display: flex;
+  height: 50px;
+}
+.item1{
+  background-color: lightpink;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+}

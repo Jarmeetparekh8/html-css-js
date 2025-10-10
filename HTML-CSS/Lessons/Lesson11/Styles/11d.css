@@ -1,0 +1,62 @@
+.card-div{
+  font-family: Arial, Helvetica, sans-serif;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+  margin-right: 10px;
+}
+.profile-pic{
+  width: 100%;
+}
+p{
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+button{
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  background-color: rgb(29, 155, 240);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 15px;
+  vertical-align: top;
+  cursor: pointer;
+  transition: box-shadow 0.15s;
+  margin-bottom: 10px;
+}
+.name{
+  padding-right: 10px;
+  padding-top: 10px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.friends{
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: gray;
+  font-size: 14px;
+}
+.smallpic{
+  width: 100%;
+  border-radius: 40px;
+}
+.profile-info{
+  padding-left: 10px;
+}
+.friend-div{
+
+}
+.pic-friend-div{
+  display: grid;
+  align-items: center;
+  grid-template-columns: 40px 1fr;
+  margin-bottom: 7px;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
