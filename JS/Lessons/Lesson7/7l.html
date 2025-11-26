@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Exercise 7l</title>
+  </head>
+  <body>
+    <button onclick="
+      console.log(`Cart Quantity : ${cartQuantity}`);
+      "
+    >
+      Show Quantity
+    </button>
+
+    <button onclick="console.log(updateCartQuantity(1,'+'));"
+    >
+      Add to Cart
+    </button>
+
+    <button onclick="console.log(updateCartQuantity(2,'+'));"
+    >
+      +2
+    </button>
+
+    <button onclick="console.log(updateCartQuantity(3,'+'));"
+    >
+      +3
+    </button>
+
+    <button onclick="console.log(updateCartQuantity(4,'+'));"
+    >
+      +4
+    </button>
+
+    <button onclick="console.log(updateCartQuantity(5,'+'));"
+    >
+      +5
+    </button>
+
+    <button onclick="console.log(updateCartQuantity(1,'-'));"
+    >
+      Remove from Cart
+    </button>
+
+    <button onclick="console.log(updateCartQuantity(2,'-'));"
+    >
+      -2
+    </button>
+
+    <button onclick="console.log(updateCartQuantity(3,'-'));"
+    >
+      -3
+    </button>
+
+    <button onclick="
+      cartQuantity = 0;
+      console.log('Cart was reset.');
+      console.log(`Cart Quantity : ${cartQuantity}`);
+      "
+    >
+      Reset Cart
+    </button>
+
+  </body>
+  <script>
+    let cartQuantity = 0;
+
+    function updateCartQuantity(qty, operator){
+      if(operator === "+"){
+        if(cartQuantity + qty <= 10){
+          cartQuantity += qty;
+          return 'Cart Quantity : ' + cartQuantity;
+        }
+        if(cartQuantity + qty > 10){
+          return 'The cart is full, maximum capacity : 10';
+        }
+      }
+      if(operator === "-"){
+        if(cartQuantity - qty >= 0){
+          cartQuantity -= qty;
+          return 'Cart Quantity : ' + cartQuantity;
+        }
+        if(cartQuantity - qty < 0){
+          return 'Not enough items in the cart';
+        }
+      }
+      else{
+        return 'Provide correct parameter';
+      }
+    }
+  </script>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Exercise 7f</title>
+  </head>
+  <body>
+
+  </body>
+  <script>
+    function convertTemperature(degrees, unit){
+      if(unit === 'C'){
+        const res = ((degrees * 9) / 5) + 32;
+        return res + 'F';
+      }
+      else{
+        const res = ((degrees - 32) * 5) / 9;
+        return res + 'C';
+      }
+    }
+    alert(convertTemperature(25,'C'));
+    alert(convertTemperature(86,'F'));
+  </script>
+</html>
