@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Exercise 8i</title>
+  </head>
+  <body>
+    <button onclick="
+      playGame('heads');
+      ">
+      Heads
+    </button>
+
+    <button onclick="
+      playGame('tails');
+      ">
+      Tails
+    </button>
+
+  </body>
+  <script>
+    function playGame(guess){
+      let coin = Math.random();
+      let flip = "";
+      if(coin < 0.5){
+        flip = 'heads';
+      }
+      else{
+        flip = 'tails';
+      }
+
+      if(guess === flip){
+        alert ('You win!');
+        return;
+      }
+      else{
+        alert('You lose huh!');
+        return;
+      }
+    }
+  </script>
+</html>

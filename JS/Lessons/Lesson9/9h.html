@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Exercise 9h</title>
+  </head>
+  <body>
+    <input type="text" class="name" onkeyup="func()">
+    <p></p>
+  </body>
+  <script>
+
+    function func(){
+      let display = document.querySelector('p');
+      let name = document.querySelector('.name');
+
+      display.innerText = name.value;
+    }
+
+  </script>
+</html>

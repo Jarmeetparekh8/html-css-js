@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Exercise 9j</title>
+  </head>
+  <body>
+    
+    <p class="displayCalculation">
+    
+    </p>
+    <p>
+      <button
+        onclick="updateCalculation(1);"
+      >1
+      </button>
+  
+      <button
+        onclick="updateCalculation(2);"
+      >2
+      </button>
+  
+      <button
+        onclick="updateCalculation(3);"
+      >3
+      </button>
+
+      <button
+        onclick="updateCalculation('+');"
+      >+
+      </button>
+    </p>
+
+    <p>
+      <button
+        onclick="updateCalculation(4);"
+      >4
+      </button>
+  
+      <button
+        onclick="updateCalculation(5);"
+      >5
+      </button>
+  
+      <button
+        onclick="updateCalculation(6);"
+      >6
+      </button>
+
+      <button
+        onclick="updateCalculation('-');"
+      >-
+      </button>
+    </p>
+
+    <p>
+      <button
+        onclick="updateCalculation(7);"
+      >7
+      </button>
+  
+      <button
+        onclick="updateCalculation(8);"
+      >8
+      </button>
+  
+      <button
+        onclick="updateCalculation(9);"
+      >9
+      </button>
+
+      <button
+        onclick="updateCalculation('*');"
+      >*
+      </button>
+    </p>
+
+    <p>
+      <button
+        onclick="updateCalculation(0);"
+      >0
+      </button>
+  
+      <button
+        onclick="updateCalculation('/');"
+      >/
+      </button>
+
+      <button
+        onclick="showCalculation(evalcal());"
+      >=
+      </button>
+
+      <button
+        onclick="
+        localStorage.removeItem('cal');
+        calculation = '';
+        showCalculation('reset')"
+      >AC
+      </button>
+      
+    </p>
+
+
+
+  </body>
+  <script>
+    let calculation = localStorage.getItem('cal') || "";
+    showCalculation(calculation);
+    function updateCalculation(val){
+      calculation += val;
+      localStorage.setItem('cal',calculation);
+      showCalculation(calculation)
+    }
+    function evalcal(){
+      let result = eval(calculation);
+      calculation = String(result);
+      localStorage.setItem('cal',calculation);
+      return result;
+    }
+    function showCalculation(param){
+      let display = document.querySelector('.displayCalculation');
+      if(param === "reset"){
+      display.innerText = `Calculation resetted !`;
+      }
+      else{
+        display.innerText = param;
+      }
+    }
+  </script>
+</html>

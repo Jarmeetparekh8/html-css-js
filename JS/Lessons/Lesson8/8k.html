@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Exercise 8j</title>
+  </head>
+  <body>
+    <button onclick="
+      playGame('heads');
+      ">
+      Heads
+    </button>
+
+    <button onclick="
+      playGame('tails');
+      ">
+      Tails
+    </button>
+
+  </body>
+  <script>
+    let score = localStorage.getItem('score') || {"wins" :0, "losses":0};
+    score = JSON.parse(score);
+    function playGame(guess){
+      let coin = Math.random();
+      let flip = "";
+      if(coin < 0.5){
+        flip = 'heads';
+      }
+      else{
+        flip = 'tails';
+      }
+
+      if(guess === flip){
+        score.wins += 1;
+        localStorage.setItem('score', JSON.stringify(score));
+        console.log('Win!',score);
+        return;
+      }
+      else{
+        score.losses += 1;
+        localStorage.setItem('score', JSON.stringify(score));
+        console.log('Loss',score);
+        return;
+      }
+    }
+  </script>
+</html>

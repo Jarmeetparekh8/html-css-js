@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Exercise 9c</title>
+  </head>
+  <body>
+    <button class="h" onclick="ht('heads');">heads</button>
+    <button class="t" onclick="ht('tails');">tails</button>
+
+    <p></p>
+  </body>
+  <script>
+    function ht(para) {
+      let display = document.querySelector('p');
+      display.innerText = `You choose : ${para}`;
+    }
+  </script>
+</html>

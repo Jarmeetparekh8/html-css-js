@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Exercise 9d</title>
+  </head>
+  <body>
+    <input type="text" class="name">
+    <button class="submit" onclick="func();">Submit</button>
+    <p></p>
+  </body>
+  <script>
+
+    function func(){
+      console.log(1);
+      let val = document.querySelector("input");
+      document.querySelector("p").innerText = `Your name is : ${val.value}` ;
+    }
+
+  </script>
+</html>
